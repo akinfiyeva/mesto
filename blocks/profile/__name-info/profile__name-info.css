@@ -1,0 +1,12 @@
+.profile__name-info {
+    grid-area: name;
+    display: flex;
+    align-items: flex-end;  
+    white-space: nowrap;  
+  }
+  
+  @media screen and (max-width: 882px) {
+    .profile__name-info {
+      justify-self: center;
+    }
+  }

@@ -17,4 +17,4 @@
 
 Верстка выполнена по технолонии БЭМ. Язык страницы русский. 
 
-[Ссылка на проект] (https://akinfiyeva.github.io/mesto/)
+[Ссылка на проект](https://akinfiyeva.github.io/mesto/)

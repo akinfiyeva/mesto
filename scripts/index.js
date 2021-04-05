@@ -5,7 +5,7 @@ let profileEdit = document.querySelector('.profile__edit');
 let popupClose = document.querySelector('.popup__close');
 let profileTitle = document.querySelector('.profile__title');
 let profileSubtitle = document.querySelector('.profile__subtitle');
-let popupInputs = document.querySelector('.popup__input');
+let popupInputs = document.querySelector('.popup__form');
 
 function openPopup() {
   popup.classList.add('popup_opened');

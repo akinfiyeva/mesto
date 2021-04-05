@@ -11,6 +11,6 @@
   }
   
   .card__like:hover {
-    transition: 2s;
+    transition: 0.2s;
     opacity: 0.5;
   }

@@ -1,12 +1,20 @@
 .profile__container {
-    margin-left: 30px;
-    margin-right: auto;
-    display: flex;
-    flex-direction: column;
+  max-width: 336px;
+  margin-right: 220px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-self: center;
+  align-items: center;
 }
-  
-@media screen and (max-width: 640px) {
-    .profile__container {
-      margin: 25px 0 36px 0;
-    }
+
+
+@media screen and (max-width: 882px) {
+  .profile__container {
+    max-width: 280px;
+    margin: 0 auto;
+    justify-content: center;
+    
+  }
 }

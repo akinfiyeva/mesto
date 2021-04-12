@@ -1,21 +1,21 @@
 .header {
-  display: flex;
-  width: 100%;
-  max-width: 880px;
-  border-bottom: 1px solid rgba(84,84,84,.7);
-  margin: 45px auto 41px;
-}
-
-@media screen and (max-width: 920px) {
-  .header {
-    max-width: 581px;
-  }
-}
-
-@media screen and (max-width: 640px) {
-  .header {
+    display: flex;
     width: 100%;
-    margin-top: 26px;
-    margin-bottom: 39px;
+    max-width: 880px;
+    border-bottom: 1px solid rgba(84,84,84,.7);
+    margin: 45px auto 41px;
   }
-}
+  
+  @media screen and (max-width: 920px) {
+    .header {
+      max-width: 581px;
+    }
+  }
+  
+  @media screen and (max-width: 640px) {
+    .header {
+      width: 100%;
+      margin-top: 26px;
+      margin-bottom: 39px;
+    }
+  }

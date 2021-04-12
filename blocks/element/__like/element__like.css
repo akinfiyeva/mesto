@@ -1,0 +1,16 @@
+.element__like {
+    background: transparent url(../../../images/like.svg);
+    background-color: transparent;
+    height: 19px;
+    width: 22px;
+    border: none;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 30px 21px;
+    cursor: pointer;
+    outline: none;
+}
+
+.element.element__like {
+    opacity: .5;
+}

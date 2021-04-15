@@ -1,9 +1,11 @@
+
+
 const editPopup = document.querySelector('.popup_profile');
 const photoModal = document.querySelector('.popup_photo');
 const photoImage = photoModal.querySelector('.popup__image');
-const btnCloseModal = photoModal.querySelector('.popup__button');
+const btnClosePhotoModal = photoModal.querySelector('.popup__button');
 const altModal = photoModal.querySelector('.popup__sign');
-const closeBtn = editPopup.querySelector('.popup__close');
+const btnClosePopupEdit = editPopup.querySelector('.popup__close');
 const popupAdd = document.querySelector('.popup_card');
 const nameInput = editPopup.querySelector('input[name="name"]');
 const jobInput = editPopup.querySelector('input[name="job"]');
@@ -17,6 +19,7 @@ const inputUrl = popupAdd.querySelector('.popup__input_type_url');
 const inputPlace = popupAdd.querySelector('.popup__input_type_name');
 const closePopupAdd = document.querySelector('#popup__close_card');
 const elementsSection = document.querySelector('.elements');
+const templateElement = document.querySelector('#template-element').content.querySelector('.element');
 
 const initialCards = [
   {
@@ -67,8 +70,7 @@ function handleProfileSubmit(evt) {
 }
 
 function createCard(item) {
-  const templateElement = document.querySelector('#template-element').content;
-  const newElement = templateElement.querySelector('.element').cloneNode(true);
+  const newElement = templateElement.cloneNode(true);
   const elementImage = newElement.querySelector('.element__image');
   const elementTitle = newElement.querySelector('.element__title');
   const elementLike = newElement.querySelector('.element__like');
@@ -121,7 +123,7 @@ renderList();
 editBtn.addEventListener('click', handlePopupEdit);
 addBtn.addEventListener('click', () => openPopup(popupAdd));
 closePopupAdd.addEventListener('click', () => closePopup(popupAdd));
-closeBtn.addEventListener('click', () => closePopup(editPopup));
+btnClosePopupEdit.addEventListener('click', () => closePopup(editPopup));
 formEdit.addEventListener('submit', handleProfileSubmit);
-btnCloseModal.addEventListener('click', () => closePopup(photoModal));
+btnClosePhotoModal.addEventListener('click', () => closePopup(photoModal));
 formAdd.addEventListener('submit', handleAddCardFormSubmit);
